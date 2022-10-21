@@ -1,0 +1,32 @@
+<Document> ::= <Header><CookingTag>
+<Header> ::= '<?xml'<XmlParams>'?>'
+<XmlParams> ::= <VersionParam><EncodingParam>
+<VersionParam> ::= 'version''=''''<XmlVersion>'''
+<XmlVersion> ::= 1.0|1.1
+<EncodingParam> ::= 'encoding''=''''<Encoding>'''
+<Encoding> ::= UTF-8|ISO-8859-1
+<CookingTag> ::= '<cooking>'<CookElements>'</cooking>'
+<CookElements> ::= <NameTag><UtensilsTag><IngredientsTag><ProcessTag>
+<NameTag> ::= '<name>'<FreeText>'</name>'
+<UtensilsTag> ::= '<utensils>'<Utensils>'</utensils>'
+<Utensils> ::= <UtensilTag>|<Utensils>
+<Utensils> ::= EPSILON
+<UtensilTag> ::= '<utensil>'<FreeText>'</utensil>'
+<IngredientsTag> ::= '<ingredients>'<Ingredients>'</ingredients>'
+<Ingredients> ::= <IngredientTag>|<Ingredients> 
+<Ingredients> ::= EPSILON
+<IngredientTag> ::= '<ingredient'<IngredientParams>'>'<FreeText>'</ingredient>'
+<IngredientParams> ::= <AmountParam><UnitParam>
+<AmountParam> ::= 'amount''=''''<Number>'''
+<UnitParam> ::= 'unit''=''''<Unit>'''
+<Unit> ::= KG|LT|GR
+<ProcessTag> ::= '<process>'<Steps>'</process>'
+<Steps> ::= <StepTag>|<Steps> 
+<Steps> ::= EPSILON
+<StepTag> ::= '<step'<StepParams>'>'<FreeText>'</step>'
+<StepParams> ::= <OrderParam><TimeParam>
+<OrderParam> ::= 'order''=''''<Number>'''
+<TimeParam> ::= 'time''=''''<Number>'''
+
+
+

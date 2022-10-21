@@ -1,0 +1,19 @@
+<?xml version='1.2' encoding='UTF-8'?>
+<cooking>
+	<name>Pollo al horno 1</name>
+	<utensils>
+		<utensil>Una olla</utensil>
+		<utensil>Una Cuchara</utensil>
+		<utensil>A</utensil>
+	</utensils>
+	<ingredients>
+		<ingredient amount='1'  unit = 'KG'>Arroz</ingredient>
+		<ingredient amount='2'  unit = 'GR'>Pollo</ingredient>
+	</ingredients>
+	<process>
+		<step order = '1' time = '10'>Cocinar pollo</step>
+		<step order = '2' time = '20'>Hervir agua</step>
+		<step order = '1' time = '10'>Cocinar pollo</step>
+		<step order = '2' time = '20'>Hervir agua</step>
+	</process>
+</cooking>

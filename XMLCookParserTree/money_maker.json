@@ -1,0 +1,22 @@
+{
+	"money_name": "Latin",
+	"creator":"Jozek Hajduk",
+	"currencies_symbol":"<<",
+	"countries_availability": [
+		"Colombia",
+		"EE.UU"
+	],
+	"coins_denominations":[
+		100,
+		300,
+		400
+	],
+	"bills_denominations":[
+		1000,
+		3000,
+		4000,
+		15000,
+		30000,
+		200000
+	]
+}

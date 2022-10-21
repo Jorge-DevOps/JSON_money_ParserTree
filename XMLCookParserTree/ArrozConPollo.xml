@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cooking>
+  <name>Arroz con pollo</name>
+  <utensils>
+    <utensil>Estufa</utensil>
+    <utensil>Olla</utensil>
+    <utensil>Cucharon</utensil>
+  </utensils>
+  <ingredients>
+    <ingredient amount = '1' unit = 'KG'>Arroz</ingredient>
+    <ingredient amount = '2' unit = 'KG'>Pollo</ingredient>
+    <ingredient amount = '2' unit = 'LT'>Agua</ingredient>
+    <ingredient amount = '5' unit = 'GR'>Sal</ingredient>
+  </ingredients>
+  <process>
+     <step order = '1' time='30'>Hervir el arroz</step>
+     <step order = '2' time='1'>Agregar el pollo</step>
+     <step order = '3' time='1'>Agregar la sal</step>
+     <step order = '4' time='30'>Cocinar</step>	
+  </process>	
+</cooking>
